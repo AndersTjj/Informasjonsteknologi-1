@@ -1,0 +1,27 @@
+<script>
+    let byer = [
+        "Venezia",
+        "Liverpool",
+        "New York",
+        "Lisboa",
+        "Berlin",
+        "San Francisco",
+        "Amsterdam",
+    ];
+    byer.push("Budapest");
+
+    for (let enkeltByer of byer) {
+        console.log(enkeltByer);
+    }
+
+    function tilfeldigBy() {
+        let by = "";
+        for (let i = 0; i < 1; i++) {
+            let indeks = Math.floor(Math.random() * byer.length);
+            by += byer[indeks];
+        }
+
+        return by;
+    }
+    console.log(`Din destinasjon er ${tilfeldigBy()}`);
+</script>

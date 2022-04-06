@@ -1,0 +1,22 @@
+<script>
+    function tilfeldigTallv2(n) {
+        returArray = [];
+        for (let i = 0; i < n; i++) {
+            let tilfeldig = Math.floor(Math.random() * 9) + 1;
+            returArray.push(tilfeldig);
+        }
+        return returArray;
+    }
+    console.log(tilfeldigTallv2(1));
+
+    function tilfeldigKode() {
+        let tall = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"];
+        let kode = "";
+        for (let i = 0; i < 4; i++) {
+            let indeks = Math.floor(Math.random() * tall.length);
+            kode += tall[indeks];
+        }
+        return kode;
+    }
+    console.log(tilfeldigKode());
+</script>

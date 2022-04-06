@@ -1,0 +1,144 @@
+______________________________________________________________________________
+
+<!-- <script>
+    let tall = [1, 2, 6, 4, 7, 8, 13];
+
+    for (let enkeltTall of tall) {
+        console.log(enkeltTall);
+    }
+
+    let sum = 0;
+    for (let i = 0; i < tall.length; i++) {
+        sum += tall[i];
+    }
+    console.log(sum);
+</script> -->
+
+Denne koden skriver ut tall, og så beregner summen av tallene!
+_____________________________________________________________________________
+
+<!-- <script>
+    let tall = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+    console.log(tall);
+</script> -->
+
+Denne koden skriver ut tallene fra 0-10, og ved console.log(tall.length) vil det
+si hvor mange tall det er push: setter et ord i slutten av array pop: fjerner et
+ord i slutten av array shift: fjerner et ord i starten av array unshift: setter
+inn et ord i starten av array
+_____________________________________________________________________________
+
+<!-- <script>
+    let tall = [4, 2, 5, 8, 12];
+    console.log(tall[2]);
+    tall[2] = 42;
+    console.log(tall);
+</script>
+
+<script>
+    let tall = [2, 3, 4];
+tall.push(5);
+console.log(tall); // Skriver ut: [2, 3, 4, 5]
+tall.unshift(1);
+console.log(tall); // Skriver ut: [1, 2, 3, 4, 5]
+
+</script> -->
+
+Disse to kodene: den første skriver ut tall, og så redigerer man inn et nytt
+tall som nr 2. Den andre: skriver ut 3 tall men pusher inn et tall på slutten
+som også skrives ut.
+___________________________________________________________________________
+
+<!-- <script>
+    let tall = [2, 4, 7, 14, 7, 42];
+console.log(indexOf(7)); // Skriver ut: 2
+</script>
+
+<script>
+    let tall = [2, 4, 7, 14, 7, 42];
+console.log(lastIndexOf(7)); // Skriver ut: 4
+</script> -->
+
+Disse to kodene brukes for å finne enkelte verdier i en array og hvilken index
+de har.
+______________________________________________________________________________________
+
+<!-- <script>
+
+let tall = [2, 4, 7, 14, 7, 42];
+let fjernIndeks = tall.indexOf(7);
+tall.splice(fjernIndeks, 1);
+console.log(tall); // Skriver ut: [2, 4, 14, 7, 42]
+
+
+</script> -->
+
+Denne koden skriver ut en rekke tall i en array. Og bryker fjernindeks variabel
+for å finne det første forekommelsen av 7. Deretter splice for å fjerne 7
+_________________________________________________________________________________________
+
+<!-- <script>
+    let tall = [1, 2, 3, 6];
+tall.splice(3, 0, 4, 5);
+console.log(tall); // Skriver ut: [1, 2, 3, 4, 5, 6]
+</script> -->
+
+Denne koden skriver ut noen tall og bruker splice for å få tall inn i arrayen
+______________________________________________________________________________________
+
+<!-- <script>
+    for (let i = 0; i < 10; i++) {
+  console.log(i);
+}
+</script> -->
+
+Denne koden skriver ut tallene 0-10
+_______________________________________________________________________________________
+
+<!-- <script>
+    let tall = [1, 2, 3, 4, 6, 8, 12];
+    console.log(tall.length); // Skriver ut: 7
+
+annen mulighet:
+
+for (let i = 0; i < tall.length; i++) {
+  console.log(tall[i]);
+}
+</script> -->
+
+Denne koden skriver ut hvor mange tall det er i en array. Den andre muligheten
+skriver ut en rekke tall helt til lengden av arrayen er nådd (7)
+______________________________________________________________________________________
+
+<!-- <script>
+    // Lagrer det første tallet i arrayen i en variabel
+let storst = tall[0];
+
+for (let i = 0; i < tall.length; i++) {
+  if (tall[i] > storst) {
+    storst = tall[i];
+  }
+}
+
+console.log(storst); // Skriver ut: 12
+</script> -->
+
+Denne koden skriver ut det største tallet. Denne koden endrer variabelen (den
+første tallet i arrayen) hvis et tall er større enn det.
+______________________________________________________________________________
+
+<!-- <script>
+    function summer(tallArray) {
+        let sum = 0;
+        for (let i = 0; i < tallArray.length; i++) {
+            sum += tallArray[i];
+        }
+
+        return sum;
+    }
+    let mineTall = [2, 4, 6, 8];
+    console.log(summer(mineTall));
+</script>
+ -->
+
+Denne koden bruker en funksjon for å skrive summen av en array.

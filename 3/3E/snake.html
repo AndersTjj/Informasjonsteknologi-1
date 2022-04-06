@@ -1,0 +1,48 @@
+<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.1/p5.min.js"></script>
+<script>
+    const xStart = 0;
+    const yStart = 250;
+
+    let x = [];
+    let y = [];
+
+    const str = 10;
+
+    let lengde = 10;
+
+    let retning = "høyre";
+
+    let xFrukt = 0;
+    let yFrukt = 0;
+
+    function setup() {
+        createCanvas(500, 500);
+        frameRate(10);
+        for (let i = 0; i < lengde; i++) {
+            x.push(xStart + i * diff);
+            y.push(yStart);
+        }
+    }
+
+    function draw() {
+        background(0);
+        fill(255);
+        for (let i = 0; i < lengde; i++) {
+            square(x[i], y[i], diff);
+        }
+    }
+    function oppdaterKoordinater() {
+        let xHode = x[lengde - 1];
+        let yHode = y[lengde - 1];
+
+        if (retning == "høyre") {
+            x.push(xHode + str);
+            y.push(yHode);
+        }
+
+        x.shift();
+        y.shift();
+    }
+
+    console.log(x, y);
+</script>

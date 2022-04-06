@@ -1,0 +1,9 @@
+Oppgave 2 Write a JavaScript function to get a random item from an array.
+
+<script>
+    function tilfeldigElement(a) {
+        let indeks = Math.floor(Math.random() * a.length);
+        return a[indeks];
+    }
+    console.log(tilfeldigElement(["kron", "mynt"]));
+</script>
